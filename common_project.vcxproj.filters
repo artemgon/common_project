@@ -26,5 +26,8 @@
     <ClInclude Include="domain.h">
       <Filter>domain</Filter>
     </ClInclude>
+    <ClInclude Include="common-project-class-s.h">
+      <Filter>domain</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

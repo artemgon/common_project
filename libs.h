@@ -1,2 +1,2 @@
-#include <iostream>
+#include "domain.h"
 using namespace std;
