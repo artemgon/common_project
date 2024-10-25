@@ -132,7 +132,6 @@
   <ItemGroup>
     <ClInclude Include="common-project-class-s.h" />
     <ClInclude Include="domain.h" />
-    <ClInclude Include="libs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

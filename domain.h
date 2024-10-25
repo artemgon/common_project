@@ -1,5 +1,5 @@
 //includes
 #include <iostream>
-#include "common-project-class-s.h"
+using namespace std;
 #include <string>
 #include <vector>
