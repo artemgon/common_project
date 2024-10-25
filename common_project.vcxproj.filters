@@ -7,6 +7,12 @@
     <Filter Include="libraries">
       <UniqueIdentifier>{421f2528-32b9-490d-819d-8a23807ed8cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="domain">
+      <UniqueIdentifier>{b6e37f1c-31e5-4f0f-9891-a9ee44071969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{bfebe635-9a19-4588-b787-88c0fd3d3735}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -16,6 +22,12 @@
   <ItemGroup>
     <ClInclude Include="libs.h">
       <Filter>libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="domain.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="common-project-class-s.h">
+      <Filter>domain</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
