@@ -1,4 +1,4 @@
-#include "domain.h"
+#include "common-project-class-s.h"
 
 int main()
 {
