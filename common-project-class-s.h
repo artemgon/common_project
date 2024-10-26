@@ -34,11 +34,9 @@ public:
     {
         quantity = newQuantity;
     }
-
-
-    virtual string GetInfo() const
+    virtual void GetInfo() const
     {
-        return "Product: " + name + "\nPrice: $" + to_string(price) + "\nQuantity: " + to_string(quantity) + "\n";
+        cout << "Product: " << name << "\nPrice: " << price << " $" << "\nQuantity: " << quantity << endl;
     }
 };
 
@@ -59,20 +57,19 @@ public:
     {
         discount = newDiscount;
     }
-    string GetInfo() const override
+    void GetInfo() const 
     {
-        return "Product: " + name + "\nPrice: $" + to_string(price) + "\nQuantity: " + to_string(quantity) + "\nDiscount: " + to_string(discount) + "\nDiscounted price: " + to_string(getPrice()) + "%\n";
+        cout << "Product: " << name << "\nPrice: " << price << "\nQuantity: " << quantity << "\nDiscount: " << discount << "\nDiscounted price: " << getPrice() << "%" << endl;;
     }
 };
 
-class Category
+class Category : public DiscountedProduct, public Product
 {
 private:
     string name;
     vector<shared_ptr<Product>> products;
 public:
-    Category(const string name) : name(name) {}
-
+    Category() = default;
     void addProduct(const shared_ptr<Product>& product)
     {
         products.push_back(product);
@@ -85,12 +82,12 @@ public:
             }), products.end());
 
     }
-    void listProducts() const
+    void getProducts(string name) const
     {
         cout << "Category: " << name << endl;
-        for (const auto& product : products)
+        for (int i = 0; i < products.size(); ++i)
         {
-            product->GetInfo();
+           products[i]->GetInfo();
         }cout << endl;
 
     }

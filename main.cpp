@@ -17,7 +17,7 @@ int main()
 
 	DiscountedProduct newDiscountedProduct("Electric Bass Guitar", 2300, 10, 15);
 	newDiscountedProduct.GetInfo();
-	newCategory.listProducts();
+	newCategory.getProducts();
 	newCategory.removeProduct("Piano");
 
 	cout << "Product count:" << newCategory.getProductCount() << endl;
